@@ -43,12 +43,12 @@ $(document).ready(function () {
     $(function () {
         $(".js-sess-all").on('click', function (event) {
             $(this).parent().parent().parent().addClass('open');
-            $('.session__in').addClass('p');
+            //$('.session__in').addClass('p');
         });
 
         $(".js-sess-all-n").on('click', function (event) {
             $(this).parent().parent().parent().removeClass('open');
-            $('.session__in').removeClass('p');
+            //$('.session__in').removeClass('p');
         });
     });
 

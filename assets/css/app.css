@@ -996,6 +996,11 @@ h2 {
 
 .banner {
   margin-top: 20px; }
+  .banner + .session {
+    margin-top: 80px; }
+    @media screen and (max-width: 991px) {
+      .banner + .session {
+        margin-top: 40px; } }
   .banner__mob-al {
     padding-bottom: 30px;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
@@ -1491,9 +1496,21 @@ h2 {
 .session {
   margin-top: 40px;
   position: relative;
-  z-index: 20; }
+  z-index: 20;
+  padding-bottom: 230px;
+  margin-bottom: -230px;
+  overflow: hidden; }
+  @media screen and (max-width: 991px) {
+    .session {
+      padding-bottom: 330px; } }
+  .session__innerr {
+    overflow: hidden;
+    margin-bottom: -230px; }
   .session + .step {
     margin-top: 5px; }
+    @media screen and (max-width: 1200px) {
+      .session + .step {
+        padding-top: 0; } }
     @media screen and (max-width: 991px) {
       .session + .step {
         margin-top: 20px; } }
@@ -1507,7 +1524,12 @@ h2 {
         display: block;
         position: relative; } }
   .session__left {
-    width: 306px; }
+    width: 395px;
+    position: relative;
+    z-index: 5; }
+    @media screen and (max-width: 1360px) {
+      .session__left {
+        width: 320px; } }
     @media screen and (max-width: 1200px) {
       .session__left {
         width: 100%;
@@ -1516,17 +1538,24 @@ h2 {
       .session__left {
         margin-bottom: 75px; } }
   .session__right {
-    width: calc(100% - 306px);
+    padding-bottom: 230px;
+    width: calc(100% - 395px);
     padding-left: 60px;
+    position: relative;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    overflow: hidden; }
+    @media screen and (max-width: 1360px) {
+      .session__right {
+        width: calc(100% - 320px); } }
     @media screen and (max-width: 1300px) {
       .session__right {
         padding-left: 15px; } }
     @media screen and (max-width: 1200px) {
       .session__right {
         width: 100%;
-        padding-left: 0; } }
+        padding-left: 0;
+        padding-bottom: 380px; } }
   .session__filter {
     text-align: right; }
     @media screen and (min-width: 991px) and (max-width: 1200px) {
@@ -1534,11 +1563,12 @@ h2 {
         display: inline-block;
         position: absolute;
         top: 88px;
-        right: 10px; } }
+        right: 10px;
+        z-index: 10; } }
     @media screen and (max-width: 991px) {
       .session__filter {
         position: absolute;
-        top: 109px;
+        top: 125px;
         left: 20px;
         z-index: 3;
         display: -webkit-inline-box;
@@ -1546,9 +1576,9 @@ h2 {
         display: inline-flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
-    @media screen and (max-width: 364px) {
+    @media screen and (max-width: 331px) {
       .session__filter {
-        top: 140px; } }
+        top: 155px; } }
     .session__filter-item {
       display: inline-block;
       vertical-align: top;
@@ -1605,10 +1635,14 @@ h2 {
       .session__filter-item.active {
         border-color: rgba(51, 51, 51, 0.25); }
   .session__nv {
-    margin-top: -220px;
+    margin-top: 220px;
     text-align: right;
     position: relative;
-    z-index: 5; }
+    z-index: 0; }
+    @media screen and (max-width: 1200px) {
+      .session__nv {
+        margin-top: 0;
+        top: 220px; } }
     @media screen and (max-width: 991px) {
       .session__nv {
         display: none; } }
@@ -1629,7 +1663,6 @@ h2 {
         .session__nv-al svg use {
           content: #333333; }
   .session__slider {
-    padding-bottom: 230px;
     overflow: inherit; }
     .session__slider-item {
       padding: 24px;
@@ -1750,6 +1783,9 @@ h2 {
       font-size: 14px;
       line-height: 13px;
       color: rgba(51, 51, 51, 0.4); }
+      @media screen and (max-width: 1220px) {
+        .session__slider-data {
+          font-size: 12px; } }
       @media screen and (max-width: 991px) {
         .session__slider-data {
           font-size: 12px;
@@ -1980,8 +2016,10 @@ h2 {
         .session__slider-dop-no img {
           margin-right: 4px; }
   .session__in {
-    margin-bottom: -230px;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 2; }
     @media screen and (max-width: 991px) {
       .session__in .swiper-slide {
