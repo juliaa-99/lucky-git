@@ -349,6 +349,23 @@ $(document).ready(function () {
         }
     });
 
+    var swiper12 = new Swiper(".js-wl-ban", {
+        loop: false,
+        spaceBetween: 12,
+        //centeredSlides: true,
+        slidesPerView: "auto",
+        navigation: {
+            nextEl: ".js-lt-prev",
+            prevEl: ".js-lt-next"
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            }
+        }
+    });
+
     /* validation*/
 
     var validSrc = '<span></span>';
