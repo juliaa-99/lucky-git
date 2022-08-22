@@ -1166,7 +1166,7 @@ h2 {
       width: 125px;
       padding: 25px;
       position: relative;
-      z-index: 5;
+      z-index: 6;
       background: rgba(23, 23, 31, 0.15);
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
@@ -1268,6 +1268,9 @@ h2 {
       font-size: 24px;
       line-height: 23px;
       color: #ffffff; }
+      .banner__slider-lt-tx span {
+        display: inline-block;
+        margin-left: 4px; }
       .banner__slider-item.min .banner__slider-lt-tx {
         font-size: 23px; }
       .banner__slider-lt-tx span {
@@ -1287,7 +1290,7 @@ h2 {
     .banner__slider-list {
       margin-top: 15px;
       position: relative;
-      z-index: 3; }
+      z-index: 8; }
       .banner__slider-list-item {
         text-align: right;
         margin-bottom: 16px; }
@@ -3253,8 +3256,7 @@ h2 {
         width: 345px; }
       .lt-main__right .dashboard__slider-sl-sts {
         bottom: -58px;
-        top: inherit;
-        background: #F0F4F4; }
+        top: inherit; }
   .lt-main__left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5309,8 +5311,6 @@ h2 {
       .dashboard__slider-sl__item {
         position: relative; }
       .dashboard__slider-sl-sts {
-        padding: 4px 6px;
-        display: table;
         opacity: 0;
         text-align: center;
         position: absolute;
@@ -5318,14 +5318,17 @@ h2 {
         left: 0;
         right: 0;
         margin: auto;
-        z-index: 2;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 12px;
-        text-transform: uppercase;
-        color: #333333;
-        background: #ffffff;
-        border-radius: 3px; }
+        z-index: 2; }
+        .dashboard__slider-sl-sts span {
+          padding: 4px 6px;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #333333;
+          background: #ffffff;
+          border-radius: 3px; }
       @media screen and (max-width: 991px) {
         .dashboard__slider-sl .banner__slider-title {
           display: -webkit-inline-box;
